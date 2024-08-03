@@ -1,0 +1,25 @@
+GET http:localhost:3003/api/blogs
+###
+POST http:localhost:3003/api/blogs
+content-type : application/json
+ 
+ {
+    
+    
+    "title" : "dfef",
+    "likes" :34,
+    "author" : "dsf",
+    "url" : "Dfd"
+    
+    
+
+}
+###
+POST http://localhost:3003/api/blogs
+content-type: application/json
+
+{
+    "name": "dfse",
+    "aaa": "12-23323"
+}
+###

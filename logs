@@ -1,0 +1,165 @@
+
+> part4@1.0.0 test
+> cross-env NODE_ENV=test node --test --test-name-pattern=post
+
+TAP version 13
+# {}
+# POST /api/blogs 400 23 - 6.436 ms
+# GET /api/blogs 200 1057 - 226.987 ms
+# Subtest: post method works
+    # Subtest: number of notes is increased
+    not ok 1 - number of notes is increased
+      ---
+      duration_ms: 4812.775686
+      location: '/home/anatol/part4/tests/blogs_api.test.js:97:5'
+      failureType: 'testCodeFailure'
+      error: |-
+        Expected values to be strictly equal:
+        
+        6 !== 7
+        
+      code: 'ERR_ASSERTION'
+      name: 'AssertionError'
+      expected: 7
+      actual: 6
+      operator: 'strictEqual'
+      stack: |-
+        TestContext.<anonymous> (/home/anatol/part4/tests/blogs_api.test.js:100:16)
+        process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        async Test.run (node:internal/test_runner/test:857:9)
+        async Promise.all (index 0)
+        async Suite.run (node:internal/test_runner/test:1217:7)
+        async Test.processPendingSubtests (node:internal/test_runner/test:565:7)
+      ...
+# {}
+# POST /api/blogs 400 23 - 0.898 ms
+# GET /api/blogs 200 1057 - 199.202 ms
+    # Subtest: like defaults to 0 if not given
+    not ok 2 - like defaults to 0 if not given
+      ---
+      duration_ms: 2315.508392
+      location: '/home/anatol/part4/tests/blogs_api.test.js:103:5'
+      failureType: 'testCodeFailure'
+      error: |-
+        Expected values to be strictly equal:
+        
+        0 !== undefined
+        
+      code: 'ERR_ASSERTION'
+      name: 'AssertionError'
+      actual: 0
+      operator: 'strictEqual'
+      stack: |-
+        TestContext.<anonymous> (/home/anatol/part4/tests/blogs_api.test.js:112:16)
+        process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        async Test.run (node:internal/test_runner/test:857:9)
+        async Suite.processPendingSubtests (node:internal/test_runner/test:565:7)
+      ...
+    1..2
+not ok 1 - post method works
+  ---
+  duration_ms: 7131.545777
+  type: 'suite'
+  location: '/home/anatol/part4/tests/blogs_api.test.js:96:1'
+  failureType: 'subtestsFailed'
+  error: '2 subtests failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+1..0
+# Subtest: tests/listhelper.test.js
+ok 2 - tests/listhelper.test.js
+  ---
+  duration_ms: 180.495442
+  ...
+1..2
+# tests 3
+# suites 1
+# pass 1
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8131.054805
+
+> part4@1.0.0 test
+> cross-env NODE_ENV=test node --test --test-name-pattern=post
+
+TAP version 13
+# {}
+# POST /api/blogs 400 23 - 20.064 ms
+# GET /api/blogs 200 1057 - 207.531 ms
+# Subtest: post method works
+    # Subtest: number of notes is increased
+    not ok 1 - number of notes is increased
+      ---
+      duration_ms: 8450.068684
+      location: '/home/anatol/part4/tests/blogs_api.test.js:97:5'
+      failureType: 'testCodeFailure'
+      error: |-
+        Expected values to be strictly equal:
+        
+        6 !== 7
+        
+      code: 'ERR_ASSERTION'
+      name: 'AssertionError'
+      expected: 7
+      actual: 6
+      operator: 'strictEqual'
+      stack: |-
+        TestContext.<anonymous> (/home/anatol/part4/tests/blogs_api.test.js:100:16)
+        process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        async Test.run (node:internal/test_runner/test:857:9)
+        async Promise.all (index 0)
+        async Suite.run (node:internal/test_runner/test:1217:7)
+        async Test.processPendingSubtests (node:internal/test_runner/test:565:7)
+      ...
+# {}
+# POST /api/blogs 400 23 - 1.137 ms
+# GET /api/blogs 200 1057 - 200.019 ms
+    # Subtest: like defaults to 0 if not given
+    not ok 2 - like defaults to 0 if not given
+      ---
+      duration_ms: 2022.798659
+      location: '/home/anatol/part4/tests/blogs_api.test.js:103:5'
+      failureType: 'testCodeFailure'
+      error: |-
+        Expected values to be strictly equal:
+        
+        6 !== 7
+        
+      code: 'ERR_ASSERTION'
+      name: 'AssertionError'
+      expected: 7
+      actual: 6
+      operator: 'strictEqual'
+      stack: |-
+        TestContext.<anonymous> (/home/anatol/part4/tests/blogs_api.test.js:112:16)
+        process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        async Test.run (node:internal/test_runner/test:857:9)
+        async Suite.processPendingSubtests (node:internal/test_runner/test:565:7)
+      ...
+    1..2
+not ok 1 - post method works
+  ---
+  duration_ms: 10476.435776
+  type: 'suite'
+  location: '/home/anatol/part4/tests/blogs_api.test.js:96:1'
+  failureType: 'subtestsFailed'
+  error: '2 subtests failed'
+  code: 'ERR_TEST_FAILURE'
+  ...
+1..0
+# Subtest: tests/listhelper.test.js
+ok 2 - tests/listhelper.test.js
+  ---
+  duration_ms: 1902.345677
+  ...
+1..2
+# tests 3
+# suites 1
+# pass 1
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 26997.019386
