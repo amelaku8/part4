@@ -1,25 +1,35 @@
 GET http:localhost:3003/api/blogs
 ###
-POST http:localhost:3003/api/blogs
+POST http:localhost:3003/api/users
 content-type : application/json
  
- {
-    
-    
-    "title" : "dfef",
-    "likes" :34,
-    "author" : "dsf",
-    "url" : "Dfd"
-    
-    
-
-}
+ {"username" : "Chala",
+        "name": "chube",
+        "password":"43wdafresdf65"
+    }
 ###
 POST http://localhost:3003/api/blogs
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkNoYWxhIiwiaWQiOiI2NmI5YzQ2Zjk5YmIzYWQ2Y2Y0MzIyMTgiLCJpYXQiOjE3MjM0NTEwODB9.j-O8ZKl0NqtBm5nGQ4T5N28-_ARsaIoi7iAkD-RDFhs
 
 {
-    "name": "dfse",
-    "aaa": "12-23323"
+    "title": "dfse",
+    "url": "12233adfa2",
+    "likes" : 45
+    
 }
 ###
+GET http://localhost:3003/api/blogs/
+
+###
+
+GET http://localhost:3003/api/users
+
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username" : "Chala",
+    "password" : "43wdafresdf65"
+}
